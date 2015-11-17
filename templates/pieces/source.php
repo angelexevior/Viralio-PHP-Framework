@@ -10,7 +10,7 @@ defined( '_SECURED' ) or die( 'Restricted access' );
 
 <!DOCTYPE html>
 <html lang="en">
- <?php include('commons/head.php'); ?>
+ <?php include('templates/pieces/commons/head.php'); ?>
 <body class="page-body">
 
 	<div class="settings-pane">
