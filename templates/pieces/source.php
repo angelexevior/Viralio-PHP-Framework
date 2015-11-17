@@ -137,15 +137,16 @@ defined('_SECURED') or die('Restricted access');
                 <?php
                 include('templates/pieces/commons/navbar.php');
 
-                $page = $_GET['page'];
+                if(isset($_GET['page'])){
+                    $page = $_GET['page'];
+                } else {
+                    $page = 'orders';
+                }
                 //echo $page;
                 //die;
-                if (isset($page)){
+                
                 include('templates/pieces/pages/' . $page . '.php');
-                }
-                else {
-                     include('templates/pieces/pages/orders.php');
-                }
+               
                 ?>			
 
                 <!-- Main Footer -->
