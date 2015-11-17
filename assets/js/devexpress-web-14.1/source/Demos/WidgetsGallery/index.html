@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>DevExtreme Widgets Gallery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="styles.css" rel="stylesheet">
+        <link href="css/dx.common.css" rel="stylesheet">
+        <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css">
+        <link rel="dx-theme" data-theme="generic.dark" href="css/dx.dark.css">
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <!--<![endif]-->
+        <script src="js/knockout-3.3.0.js"></script>
+        <script src="js/globalize.min.js"></script>
+        <script src="js/dx.webappjs.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="content">
+                <div id="onlinedemo" class="button"></div>
+                <div class="logo">
+                    <a class="logo" title="DevExtreme Widgets Gallery" href="index.html"></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-content">
+            <div class="democase-menu">
+		<div>
+			<div class="category-title"><h5>Data Grid</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Paging and Scrolling</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Paging and Scrolling/Record Paging.html">Record Paging</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Paging and Scrolling/Virtual Scrolling.html">Virtual Scrolling</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Paging and Scrolling/Infinite Scrolling.html">Infinite Scrolling</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Editing</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Editing/Row Editing and Editing Events.html">Row Editing and Editing Events</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Editing/Batch Editing.html">Batch Editing</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Editing/Cell Editing and Editing API.html">Cell Editing and Editing API</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Editing/Data Validation.html">Data Validation</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Grouping</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Grouping/Record Grouping.html">Record Grouping</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Grouping/Remote Grouping.html">Remote Grouping</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Filtering and Sorting</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Filtering and Sorting/Multiple Sorting.html">Multiple Sorting</a></li>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Data Grid/Filtering and Sorting/Filtering.html">Filtering</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Filtering and Sorting/Filtering API.html">Filtering API</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Selection</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Selection/Row Selection.html">Row Selection</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Selection/Multiple Record Selection and API.html">Multiple Record Selection and API</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Columns</h6>
+					<ul>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Data Grid/Columns/Column Customization.html">Column Customization</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Columns/Columns based on a Data Source.html">Columns based on a Data Source</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>State Persistence</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/State Persistence/State Persistence.html">State Persistence</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Appearance</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Appearance/Appearance.html">Appearance</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Appearance/Right-To-Left Support.html">Right-To-Left Support</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Templates</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Templates/Column Template.html">Column Template</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Templates/Column 3rd Party Engine Template.html">Column 3rd Party Engine Template</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Templates/Row 3rd Party Engine Template.html">Row 3rd Party Engine Template</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Templates/Cell Customization.html">Cell Customization</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Data Summaries</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Data Summaries/Grid Summaries.html">Grid Summaries</a></li>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Data Grid/Data Summaries/Group Summaries.html">Group Summaries</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Data Summaries/Custom Summaries.html">Custom Summaries</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Master-Detail</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Master-Detail/Master-Detail View.html">Master-Detail View</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Data Grid/Master-Detail/Master-Detail API.html">Master-Detail API</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Export</h6>
+					<ul>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Data Grid/Export/Export to Excel.html">Export to Excel</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Pivot Grid</h6>
+					<ul>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Data Grid/Pivot Grid/Local Data Source.html">Local Data Source</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Data Grid/Pivot Grid/OLAP Data Source.html">OLAP Data Source</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Data Grid/Pivot Grid/Field Chooser.html">Field Chooser</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Charts</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Bar Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Standard Bar.html">Standard Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Side-by-Side Bar.html">Side-by-Side Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Stacked Bar.html">Stacked Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Full Stacked Bar.html">Full Stacked Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Side-by-Side Stacked Bar.html">Side-by-Side Stacked Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Side-by-Side Full-Stacked Bar.html">Side-by-Side Full-Stacked Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Auto-Calculated Bar Width.html">Auto-Calculated Bar Width</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bar Series/Custom Bar Width.html">Custom Bar Width</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Line And Point Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Line And Point Series/Line.html">Line</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Line And Point Series/Spline.html">Spline</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Line And Point Series/Scatter.html">Scatter</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Line And Point Series/Step Line.html">Step Line</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Line And Point Series/Bubble.html">Bubble</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Financial Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Financial Series/Stock.html">Stock</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Financial Series/Candlestick.html">Candlestick</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Area Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Area Series/Area.html">Area</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Area Series/Spline Area.html">Spline Area</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Area Series/Step Area.html">Step Area</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Range Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Range Series/Range Bar.html">Range Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Range Series/Range Area.html">Range Area</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Pie Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Pie Series/Pie.html">Pie</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Pie Series/Pie with Custom Labels.html">Pie with Custom Labels</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Pie Series/Pie with Small Values Grouped.html">Pie with Small Values Grouped</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Pie Series/Pie with Resolved Label Overlapping.html">Pie with Resolved Label Overlapping</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Doughnut Series</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Doughnut Series/Doughnut.html">Doughnut</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Doughnut Series/Doughnut Selection.html">Doughnut Selection</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Doughnut Series/Doughnut with Top N Series.html">Doughnut with Top N Series</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Remote Data Source</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Remote Data Source/Using an Ajax Query.html">Using an Ajax Query</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Remote Data Source/Client Side Data Processing.html">Client Side Data Processing</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Remote Data Source/Data Processing Using the DataSource Object.html">Data Processing Using the DataSource Object</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Sparklines</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Sparklines/Simple Sparklines.html">Simple Sparklines</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Sparklines/Area Sparklines.html">Area Sparklines</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Sparklines/Bar Sparklines.html">Bar Sparklines</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Sparklines/Winloss Sparklines.html">Winloss Sparklines</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Bullets</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Bullets/Simple Bullets.html">Simple Bullets</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Advanced features</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Zooming and Scrolling.html">Zooming and Scrolling</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Zooming and Scrolling API.html">Zooming and Scrolling API</a></li>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Multiple Axes.html">Multiple Axes</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Multiple Panes.html">Multiple Panes</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Hover Mode.html">Hover Mode</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Selection.html">Selection</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Multiple Series Selection.html">Multiple Series Selection</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Multiple Point Selection.html">Multiple Point Selection</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Series Templates.html">Series Templates</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Null Point Support.html">Null Point Support</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/API - Select a Point.html">API - Select a Point</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/API - Display a Tooltip.html">API - Display a Tooltip</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Tooltip HTML Support.html">Tooltip HTML Support</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Crosshair.html">Crosshair</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Point Image.html">Point Image</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Customize Points and Labels.html">Customize Points and Labels</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Logarithmic Axis.html">Logarithmic Axis</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Points Aggregation.html">Points Aggregation</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Points Aggregation - Financial Chart.html">Points Aggregation - Financial Chart</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Discrete Axis Zooming and Scrolling.html">Discrete Axis Zooming and Scrolling</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Advanced features/Error bars.html">Error bars</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Polar and Radar Charts</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Continuous Data.html">Continuous Data</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Discrete Data.html">Discrete Data</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Spider Web.html">Spider Web</a></li>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Wind Rose.html">Wind Rose</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Periodic Data.html">Periodic Data</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Charts/Polar and Radar Charts/Inverted Chart.html">Inverted Chart</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Gauges</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Circular Gauge Basic Elements</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Palette for Ranges.html">Palette for Ranges</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Scale Minor Ticks.html">Scale Minor Ticks</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Scale Label Formatting.html">Scale Label Formatting</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Different Value Indicator Types.html">Different Value Indicator Types</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Different Subvalue Indicator Types.html">Different Subvalue Indicator Types</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Subvalue Indicator Text Formatting.html">Subvalue Indicator Text Formatting</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Custom Layout.html">Custom Layout</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Angles Customization.html">Angles Customization</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Gauge Title Customized.html">Gauge Title Customized</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge Basic Elements/Gauge Tooltip.html">Gauge Tooltip</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Circular Gauge API And Binding</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge API And Binding/Value Indicators API.html">Value Indicators API</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Circular Gauge API And Binding/Data Binding for Subvalue Indicators.html">Data Binding for Subvalue Indicators</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Linear Gauge Basic Elements</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Scale Custom Tick Interval.html">Scale Custom Tick Interval</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Scale Custom Tick Values.html">Scale Custom Tick Values</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Different Value Indicator Types.html">Different Value Indicator Types</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Different Subvalue Indicator Types.html">Different Subvalue Indicator Types</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Base Value for Range Bar.html">Base Value for Range Bar</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge Basic Elements/Custom Layout.html">Custom Layout</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Linear Gauge API And Binding</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge API And Binding/Variable Number of Subvalue Indicators.html">Variable Number of Subvalue Indicators</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Linear Gauge API And Binding/Data Binding.html">Data Binding</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Bar Gauge Basic Elements</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Bar Gauge Basic Elements/Labels Customization.html">Labels Customization</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Bar Gauge Basic Elements/Palette.html">Palette</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Bar Gauge Basic Elements/Tooltip.html">Tooltip</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Bar Gauge API and Binding</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Bar Gauge API and Binding/Variable Number of Bars.html">Variable Number of Bars</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Gauges/Bar Gauge API and Binding/Data Binding.html">Data Binding</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Navigation</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Tree View</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Tree View/Hierarchical Data Structure.html">Hierarchical Data Structure</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Tree View/Plain Data Structure.html">Plain Data Structure</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Tree View/Item Selection and Customization.html">Item Selection and Customization</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Navigation/Tree View/Virtual Mode.html">Virtual Mode</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Menu</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Menu/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Tabs</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Navigation/Tabs/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Multi View</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Navigation/Multi View/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Tab Panel</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Navigation/Tab Panel/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Accordion</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Accordion/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Appearance</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Navigation/Appearance/Right-To-Left Support.html">Right-To-Left Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Editors</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Check Box</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Check Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Switch</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Switch/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Text Box</h6>
+					<ul>
+					<li class=" isupdated" data-distribution="Common"><a href="demos/Common/Editors/Text Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Number Box</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Number Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Select Box</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Select Box/Overview.html">Overview</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Select Box/Search and Editing.html">Search and Editing</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Tag Box</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Tag Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Text Area</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Text Area/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Date Box</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Date Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Color Box</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Editors/Color Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Calendar</h6>
+					<ul>
+					<li class=" isupdated" data-distribution="Common"><a href="demos/Common/Editors/Calendar/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Autocomplete</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Autocomplete/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Validation</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Validation/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Appearance</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Editors/Appearance/Right-To-Left Support.html">Right-To-Left Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Forms and Multi-Purpose</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Field Set</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Forms and Multi-Purpose/Field Set/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Radio Group</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Forms and Multi-Purpose/Radio Group/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Slider</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Forms and Multi-Purpose/Slider/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Range Slider</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Forms and Multi-Purpose/Range Slider/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Range Selector</h6>
+					<ul>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Numeric Scale (Lightweight).html">Numeric Scale (Lightweight)</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Numeric Scale.html">Numeric Scale</a></li>
+					<li class=" isupdated" data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Date-Time Scale (Lightweight).html">Date-Time Scale (Lightweight)</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Date-Time Scale.html">Date-Time Scale</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Logarithmic Scale.html">Logarithmic Scale</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Discrete scale.html">Discrete scale</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Custom Formatting.html">Custom Formatting</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Use Range Selection for Caclulation.html">Use Range Selection for Caclulation</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Use Range Selection for Filtering.html">Use Range Selection for Filtering</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Image on Background.html">Image on Background</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Chart on Background.html">Chart on Background</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Customized Chart on Background.html">Customized Chart on Background</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Range Selector/Chart on Background with Series Template.html">Chart on Background with Series Template</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Box</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Responsive Box</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Responsive Box/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>ScrollView</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Forms and Multi-Purpose/ScrollView/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Scheduler</h6>
+					<ul>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Scheduler/Overview.html">Overview</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Scheduler/Grouped Appointments.html">Grouped Appointments</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Forms and Multi-Purpose/Scheduler/Google Calendar Integration.html">Google Calendar Integration</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Actions and Lists</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Button</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/Button/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Lookup</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/Lookup/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Gallery</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/Gallery/Overview.html">Overview</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/Gallery/Item Template.html">Item Template</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/Gallery/Item 3rd Party Engine Template.html">Item 3rd Party Engine Template</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>List</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/List/List Editing and API.html">List Editing and API</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/List/Grouped List.html">Grouped List</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/List/Item Template.html">Item Template</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/List/Item 3rd Party Engine Template.html">Item 3rd Party Engine Template</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/List/List with Search Bar.html">List with Search Bar</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>TileView</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Actions and Lists/TileView/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Context Menu</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Actions and Lists/Context Menu/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>File Uploader</h6>
+					<ul>
+					<li class="isnew" data-distribution="Common"><a href="demos/Common/Actions and Lists/File Uploader/File Selection.html">File Selection</a></li>
+					<li class="isnew" data-distribution="Common"><a href="demos/Common/Actions and Lists/File Uploader/File Uploading.html">File Uploading</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Maps</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Map</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Maps/Map/Providers and Types.html">Providers and Types</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Maps/Map/Markers.html">Markers</a></li>
+					<li data-distribution="Common"><a href="demos/Common/Maps/Map/Routes.html">Routes</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Vector Map</h6>
+					<ul>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Colors Customization.html">Colors Customization</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Zooming and Centering.html">Zooming and Centering</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Palette.html">Palette</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Image Markers.html">Image Markers</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Bubble Markers.html">Bubble Markers</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Pie Markers.html">Pie Markers</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Dynamic Viewport.html">Dynamic Viewport</a></li>
+					<li data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Area with Labels and Two Legends.html">Area with Labels and Two Legends</a></li>
+					<li class="isnew" data-distribution="Web"><a href="demos/Web/Maps/Vector Map/Tooltip HTML Support.html">Tooltip HTML Support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="category-title"><h5>Dialogs and Notifications</h5></div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Popover</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Popover/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Popup</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Popup/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Toast</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Toast/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Load Panel</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Load Panel/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Tooltip</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Tooltip/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+				<div class="subcategory">
+					<h6>Progress Bar</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Progress Bar/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="category">
+				<div class="subcategory">
+					<h6>Load Indicator</h6>
+					<ul>
+					<li data-distribution="Common"><a href="demos/Common/Dialogs and Notifications/Load Indicator/Overview.html">Overview</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        $("#onlinedemo.button").dxButton({
+            text: "Online Demo Gallery",
+            onClick: function () { document.location.href = "http://js.devexpress.com/Demos/WidgetsGallery/" }
+        });
+    </script>
+</html>
