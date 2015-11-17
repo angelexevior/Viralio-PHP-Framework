@@ -46,6 +46,6 @@ $finish = microtime(true);
 $time = $finish - $start;
 //usleep(100);
 //Comment out below line to hide the test
-//echo '<div style="margin-top:50px;color:yellow;background:silver;padding:5px;">executed in ' . $time . ' seconds</div>';
+echo '<div style="margin-top:50px;color:yellow;background:silver;padding:5px;">executed in ' . $time . ' seconds</div>';
 
 ?>

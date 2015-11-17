@@ -7,6 +7,7 @@ defined( '_SECURED' ) or die( 'Restricted access' );
  */
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
  <?php include('commons/head.php'); ?>
@@ -133,7 +134,7 @@ defined( '_SECURED' ) or die( 'Restricted access' );
 	
 		<div class="main-content">
 					
-			<?php	include('commons/navbar.php'); ?>
+			<?php	include('templates/pieces/commons/navbar.php'); ?>
 			
 			<div class="dx-warning hidden">
 				<div>
