@@ -31,7 +31,9 @@ define('_SECURED', 1);
  */
 include('templates/template.php');
 
-
+//$page = $_GET['page'];
+//echo $page;die;
+//include('templates/pieces/pages/'.$page.'.php');
 /*
  * Post processing calculations go here
  */
