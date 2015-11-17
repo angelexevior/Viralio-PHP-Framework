@@ -1,7 +1,7 @@
 <?php defined( '_SECURED' ) or die( 'Restricted access' ); ?>
 <head>
-       <?php include('commons/headmeta.php'); 
-       include('commons/headcss.php'); ?>
+       <?php include('templates/pieces/commons/headmeta.php'); 
+       include('templates/pieces/commons/headcss.php'); ?>
 	
 
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
