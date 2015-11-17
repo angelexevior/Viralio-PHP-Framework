@@ -1,5 +1,5 @@
 <?php
-
+defined( '_SECURED' ) or die( 'Restricted access' );
 ?>
 <div class="sidebar-menu toggle-others fixed">
 		
