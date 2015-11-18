@@ -137,14 +137,8 @@ defined('_SECURED') or die('Restricted access');
                 <?php
                 include('templates/pieces/commons/navbar.php');
 
-                if(isset($_GET['page'])){
-                    $page = $_GET['page'];
-                } else {
-                    $page = 'orders';
-                }
-                //echo $page;
-                //die;
-                
+                //Getting the current page content
+                $page = $platform->getPage();
                 include('templates/pieces/pages/' . $page . '.php');
                
                 ?>			
@@ -159,9 +153,8 @@ defined('_SECURED') or die('Restricted access');
 
                         <!-- Add your copyright text here -->
                         <div class="footer-text">
-                            &copy; 2014 
-                            <strong>Xenon</strong> 
-                            theme by <a href="http://laborator.co" target="_blank">Laborator</a> - <a href="http://themeforest.net/item/xenon-bootstrap-admin-theme/9059661?ref=Laborator" target="_blank">Purchase for only <strong>23$</strong></a>
+                            &copy; 2015 
+                             <a href="http://www.exevior.com" target="_blank"><strong>Exevior Technologies Ltd</strong></a>
                         </div>
 
 

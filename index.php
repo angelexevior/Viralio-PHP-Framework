@@ -24,7 +24,11 @@ define('_SECURED', 1);
  * Making calculations and setups before execution
  */
 
-//Nothing at the moment
+//Prepare platform and db connection classes
+include('library/classes/platform.php');
+include('library/classes/db.php');
+$platform = new platform;
+$db = new db;
 
 /*
  * Begin with laying out your templating structure
