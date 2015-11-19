@@ -3,8 +3,10 @@
 defined( '_SECURED' ) or die( 'Restricted access' );
 
 //Lets get the languages available from the database
+/*
 $query = "SELECT * FROM languages WHERE active = 1 ORDER BY ordering";
 $languages = $platform->getdata($query);
+ */
 
 echo "<pre>";
 print_r($languages);

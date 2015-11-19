@@ -28,9 +28,11 @@ define('_SECURED', 1);
 include('library/classes/platform.php');
 $platform = new platform;
 
+/*
 if (!$platform->database_connected()) {
     $platform->connect_to_database();
 }
+ */
 
 //Language Selector
 //DEFAULT SET BELOW FOR POST-DEVELOPMENT
@@ -39,7 +41,7 @@ if (!$platform->database_connected()) {
     }else{
         $lang = 'en';
     }
-$platform->translator($lang);
+//$platform->translator($lang);
 
 //If there is an action, include a controller with that name
 if (isset($_GET['action'])){
@@ -84,7 +86,7 @@ if (isset($_GET['action'])){
  */
 
 //Close the database connection
-$platform->database_close();
+//$platform->database_close();
 
 /*
  * End of script
