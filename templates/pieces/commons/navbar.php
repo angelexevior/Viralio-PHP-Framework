@@ -1,6 +1,16 @@
 <?php
 
 defined( '_SECURED' ) or die( 'Restricted access' );
+
+//Lets get the languages available from the database
+$query = "SELECT * FROM languages WHERE active = 1 ORDER BY ordering";
+$languages = $platform->getdata($query);
+
+echo "<pre>";
+print_r($languages);
+echo "</pre>";
+ 
+ 
 ?>
 
 <nav class="navbar user-info-navbar"  role="navigation"><!-- User Info, Notifications and Menu Bar -->
@@ -33,7 +43,7 @@ defined( '_SECURED' ) or die( 'Restricted access' );
 											</span>
 							
 											<span class="line desc small">
-												This ain’t our first item, it is the best of the rest.
+												This ainï¿½t our first item, it is the best of the rest.
 											</span>
 										</a>
 									</li>
@@ -87,7 +97,7 @@ defined( '_SECURED' ) or die( 'Restricted access' );
 											</span>
 							
 											<span class="line desc small">
-												This ain’t our first item, it is the best of the rest.
+												This ainï¿½t our first item, it is the best of the rest.
 											</span>
 										</a>
 									</li>

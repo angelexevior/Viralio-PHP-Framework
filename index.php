@@ -26,23 +26,65 @@ define('_SECURED', 1);
 
 //Prepare platform and db connection classes
 include('library/classes/platform.php');
-include('library/classes/db.php');
 $platform = new platform;
-$db = new db;
 
-/*
- * Begin with laying out your templating structure
- */
-include('templates/template.php');
+if (!$platform->database_connected()) {
+    $platform->connect_to_database();
+}
 
-//$page = $_GET['page'];
-//echo $page;die;
-//include('templates/pieces/pages/'.$page.'.php');
+//Language Selector
+//DEFAULT SET BELOW FOR POST-DEVELOPMENT
+    if(isset($_GET["lang"])){
+        $lang=$_GET["lang"];
+    }else{
+        $lang = 'en';
+    }
+$platform->translator($lang);
+
+//If there is an action, include a controller with that name
+if (isset($_GET['action'])){
+    include('controllers/'.$_GET['action'].".php");
+}
+
+//If Ajax Request
+ else if(isset($_GET['request']) && $_GET['request']=="ajax")
+ {
+    include('library/ajax.php');
+ } else {
+    //LOAD THE FRAMEWORK
+    require_once 'library/classes/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
+    $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+    
+    //RESET DEFAULTS
+    $appendscript = NULL;
+    $appendfile = NULL;
+    
+    //DETECT PAGE
+    $page = new stdClass;
+    if(isset($_GET['page'])){
+        $page->path = $_GET['page'];
+        if(isset($_GET['type'])){
+            $page->type = $_GET['type'];
+        } else {
+            $page->type = 'page';
+        }
+    } else {
+        $page->path = 'default';
+    }
+
+    /*
+    * Begin with laying out your templating structure
+    */
+    include('templates/template.php');
+}
+
 /*
  * Post processing calculations go here
  */
 
-//Nothing at the moment
+//Close the database connection
+$platform->database_close();
 
 /*
  * End of script
