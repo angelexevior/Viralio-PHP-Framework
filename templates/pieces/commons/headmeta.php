@@ -6,5 +6,5 @@
 	<meta name="description" content="Xenon Boostrap Admin Panel" />
 	<meta name="author" content="" />
 
-	<title>Xenon - Dashboard</title>
+	<title>Team11 Project: DMaster</title>
 
