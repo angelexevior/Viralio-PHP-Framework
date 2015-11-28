@@ -4,13 +4,7 @@
 <!DOCTYPE html>
 <<html>
    <html>
-<head>
-<style>
-body {
-    background-color:#93B874;
-}
-</style>
-</head>
+
     <form action="http://maps.google.com/maps" method="get" target="_blank">
         <strong>Enter your location!!</strong>
         <input type="text" name="saddr" />
