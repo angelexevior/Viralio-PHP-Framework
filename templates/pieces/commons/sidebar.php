@@ -48,14 +48,14 @@ defined('_SECURED') or die('Restricted access');
         <ul id="main-menu" class="main-menu">
             <!-- add class "multiple-expanded" to allow multiple submenus to open -->
             <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
-            <li class="active opened active">
+            <li >
                 <a href="index.php?page=orders">
                     <i class="linecons-cog"></i>
                     <span class="title">Orders</span>
                 </a>
 
             </li>
-            <li>
+            <li  >
                 <a href="index.php?page=products">
                     <i class="linecons-desktop"></i>
                     <span class="title">Products</span>
