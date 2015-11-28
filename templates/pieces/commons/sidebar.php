@@ -2,8 +2,8 @@
 defined('_SECURED') or die('Restricted access');
 ?>
 <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
-            <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
-            <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
 <div class="sidebar-menu toggle-others fixed">
 
     <div class="sidebar-menu-inner">
@@ -53,60 +53,77 @@ defined('_SECURED') or die('Restricted access');
                     <i class="linecons-cog"></i>
                     <span class="title">Orders</span>
                 </a>
-                
+
             </li>
             <li>
                 <a href="index.php?page=products">
                     <i class="linecons-desktop"></i>
                     <span class="title">Products</span>
                 </a>
-                
+
             </li>
             <li>
                 <a href="index.php?page=delivery">
                     <i class="linecons-note"></i>
                     <span class="title">Delivery</span>
                 </a>
-                
+
             </li>
             <li>
                 <a href="index.php?page=settings">
                     <i class="linecons-star"></i>
                     <span class="title">Settings</span>
                 </a>
+
             </li>
             <li>
                 <a href="index.php?page=reports">
                     <i class="linecons-mail"></i>
                     <span class="title">Reports</span>
-                   
                 </a>
-                
+                <ul>
+                    <li>
+                        <a href="index.php?page=reports_products">
+                            <span class="title">Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php?page=reports_clients">
+                            <span class="title">Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php?page=reports_routes">
+                            <span class="title">Routes</span>
+                        </a>
+                    </li>
+                </ul>
+
             </li>
             <li>
                 <a href="index.php?page=clients">
                     <i class="linecons-database"></i>
                     <span class="title">Clients</span>
                 </a>
-                
+
             </li>
             <li>
                 <a href="index.php?page=routes">
                     <i class="linecons-params"></i>
                     <span class="title">Routes</span>
                 </a>
-                
+
             </li>
             <li>
                 <a href="index.php?page=production">
                     <i class="linecons-beaker"></i>
                     <span class="title">Production</span>
-                  
+
                 </a>
-                
+
             </li>
-            
-            
+
+
         </ul>
 
     </div>
