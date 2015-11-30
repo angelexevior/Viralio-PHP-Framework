@@ -91,22 +91,22 @@
 										
 									$("#bar-2").dxChart({
 										dataSource: [
-                                                                                    {day: "January", Clients: 3},
-                                                                                    {day: "February", Clients: 2},
-                                                                                    {day: "March", Clients: 3},
-                                                                                    {day: "April", Clients: 4},
-                                                                                    {day: "May", Clients: 6},
-                                                                                    {day: "June", Clients: 11},
-                                                                                    {day: "July", Clients: 4},
-                                                                                    {day: "August", Clients: 4},
-                                                                                    {day: "September", Clients: 4},
-                                                                                    {day: "October", Clients: 4},
-                                                                                    {day: "November", Clients: 4},
-                                                                                    {day: "December", Clients: 4}
+                                                                                    {month: "January", Clients: 3},
+                                                                                    {month: "February", Clients: 2},
+                                                                                    {month: "March", Clients: 3},
+                                                                                    {month: "April", Clients: 4},
+                                                                                    {month: "May", Clients: 6},
+                                                                                    {month: "June", Clients: 11},
+                                                                                    {month: "July", Clients: 4},
+                                                                                    {month: "August", Clients: 4},
+                                                                                    {month: "September", Clients: 4},
+                                                                                    {month: "October", Clients: 4},
+                                                                                    {month: "November", Clients: 4},
+                                                                                    {month: "December", Clients: 4}
                                                                                 ],
 									 
 										series: {
-											argumentField: "Month",
+											argumentField: "month",
 											valueField: "Clients",
                                                                                         name: "Clients",
 											type: "bar",
@@ -165,7 +165,7 @@
 
                             $("#bar-1").dxChart({
                                 dataSource: [
-                                    {day: "January", Clients: 3},
+                                    {month: "January", Clients: 3},
                                     {day: "February", Clients: 2},
                                     {day: "March", Clients: 3},
                                     {day: "April", Clients: 4},
