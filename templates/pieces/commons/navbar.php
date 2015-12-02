@@ -8,9 +8,9 @@ $query = "SELECT * FROM languages WHERE active = 1 ORDER BY ordering";
 $languages = $platform->getdata($query);
  */
 
-echo "<pre>";
+/*echo "<pre>";
 print_r($languages);
-echo "</pre>";
+echo "</pre>";*/
  
  
 ?>
