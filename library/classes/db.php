@@ -36,62 +36,6 @@ class db{
         
     }
     
-    public function open_connection1(){
-        $config = new Config();
-        //$this->connection = mysqli_connect("10.42.0.115", "root", "abedosX2012", "beep3");
-         $this->connection = mysqli_connect("212.71.255.244", $config->db_username, $config->db_password, $config->db_database);
-        @mysqli_query($this->connection,'set names "utf-8"');
-        @mysqli_query($this->connection,'set character set "utf8"');
-        @mysqli_query($this->connection,'set character_set_server="utf8"');
-        @mysqli_query($this->connection,'set collation_connection="utf8_general_ci"');
-        if (!$this->connection){
-            die("Database connection failed: ". mysqli_error());
-        }
-        
-    }
-    
-    public function open_connection_custom($server = NULL){
-        $config = new Config();
-        switch($server){
-            case 'local':
-                $dbserver = '10.42.0.10';
-                break;
-            case 'prelive':
-                $dbserver = '164.40.140.156';
-                break;
-            case 'live':
-                $dbserver = '212.71.255.244';
-                break;
-            default :
-                $dbserver = 'db';
-                break;
-        }
-        //$this->connection = mysqli_connect("10.42.0.115", "root", "abedosX2012", "beep3");
-         $this->connection = mysqli_connect($dbserver, $config->db_username, $config->db_password, $config->db_database);
-        @mysqli_query($this->connection,'set names "utf-8"');
-        @mysqli_query($this->connection,'set character set "utf8"');
-        @mysqli_query($this->connection,'set character_set_server="utf8"');
-        @mysqli_query($this->connection,'set collation_connection="utf8_general_ci"');
-        if (!$this->connection){
-            die("Database connection failed: ". mysqli_error());
-        }
-        
-    }
-    
-    
-     public function open_connection_beep(){
-        $config = new Config();
-        $this->connection = mysqli_connect("beepdb", $config->db_username, $config->db_password, $config->db_database);
-        @mysqli_query($this->connection,'set names "utf-8"');
-        @mysqli_query($this->connection,'set character set "utf8"');
-        @mysqli_query($this->connection,'set character_set_server="utf8"');
-        @mysqli_query($this->connection,'set collation_connection="utf8_general_ci"');
-        if (!$this->connection){
-            die("Database connection failed: ". mysqli_error());
-        }
-        
-    }
-    
     public function close_connection(){
         if(isset($this->connection)){
             mysqli_close($this->connection);
@@ -203,7 +147,7 @@ class db{
     private function confirm_query($result){
         if (!$result){
             global $vio;
-            $lib = new beep;
+            $lib = new Vio();
 
             $body = "Database query failed: " . mysqli_error($this->connection) . "<br/><br/>";
             $body .="Last SQL query: " . $this->last_query;
