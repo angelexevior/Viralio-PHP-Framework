@@ -11,9 +11,9 @@ class config{
     public $session_timeout = '3600';
     
     //Email settings
-    public $smtphost= "ssl://smtp.beepextra.com";
-    public $smtpusername = "donotreply@beepextra.com";
-    public $smtppassword = "tsoullara";
+    public $smtphost= "ssl://smtp.yourmailserver.com";
+    public $smtpusername = "donotreply@you.com";
+    public $smtppassword = "********";
     public $smtpmode = "SSL";
     public $smtpport = "465";
     
