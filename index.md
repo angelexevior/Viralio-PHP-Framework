@@ -1,5 +1,5 @@
-### Welcome to Delivery Master Project.
-This project is simply to layout the interfaces for the DMaster project
+### Welcome to Viralio PHP Platform Development Project.
+This project is simply to layout the interfaces for the Vio project
 
 ### Designer Templates
 Using Xenon html5 framework, DevExpress libraries, and base PHP Core framework with performance tests for development.
@@ -10,7 +10,7 @@ Follow guidlines as outlined in comments within php files
 ### Authors and Contributors
 Guided by: Angelos Hadjiphilippou (@angelexevior) 
 
-Team Members: 
+Original Team Members: 
 
 - George Moullotos (@gmoull01)
 - Marios Papaiosif (@mpapai04)
