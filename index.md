@@ -1,5 +1,5 @@
-### Welcome to Viralio PHP Platform Development Project.
-This project is simply to layout the interfaces for the Vio project
+### Welcome to Viralio.
+This project is simply to layout the interfaces for the Vio PHP Framework development project
 
 ### Designer Templates
 Using Xenon html5 framework, DevExpress libraries, and base PHP Core framework with performance tests for development.
