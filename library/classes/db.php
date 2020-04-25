@@ -159,8 +159,8 @@ class db{
             $body .= "</pre>";
             
             
-            $from = 'error_log@beepxtra.com';
-            $to = 'angelos@exevior.com';
+            $from = 'error_log@viralio';
+            $to = 'somebody@viralio';
             $subject = 'error in query';
             
             $output = '<html><head>
