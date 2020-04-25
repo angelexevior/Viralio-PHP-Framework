@@ -8,7 +8,6 @@
 class Vio {
     
     public $db;
-    public $beepdb;
     public $sphinx;
     public $config;
     public $menu;
