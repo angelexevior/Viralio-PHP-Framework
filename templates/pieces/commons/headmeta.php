@@ -6,5 +6,5 @@
 	<meta name="description" content="Xenon Boostrap Admin Panel" />
 	<meta name="author" content="" />
 
-	<title>Team11 Project: DMaster</title>
+	<title>Team11 Project: viralio</title>
 

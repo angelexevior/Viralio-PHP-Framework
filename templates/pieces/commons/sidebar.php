@@ -13,11 +13,11 @@ defined('_SECURED') or die('Restricted access');
             <!-- logo -->
             <div class="logo">
                 <a href="dashboard-1.html" class="logo-expanded">
-                    <img src="assets/images/logoDMaster.jpg" width="80" alt="" />
+                    <img src="assets/images/logoviralio.jpg" width="80" alt="" />
                 </a>
 
                 <a href="dashboard-1.html" class="logo-collapsed">
-                    <img src="assets/images/logoDMaster.jpg" width="40" alt="" />
+                    <img src="assets/images/logoviralio.jpg" width="40" alt="" />
                 </a>
             </div>
 

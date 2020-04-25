@@ -16,7 +16,7 @@ class db{
     
     
     function __construct(){
-       global $beep;
+       global $vio;
         // $this->open_connection_ego();
        // $this->open_connection_directory();
         $this->magic_quotes_active = get_magic_quotes_gpc();
@@ -202,7 +202,7 @@ class db{
        
     private function confirm_query($result){
         if (!$result){
-            global $beep;
+            global $vio;
             $lib = new beep;
 
             $body = "Database query failed: " . mysqli_error($this->connection) . "<br/><br/>";

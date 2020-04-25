@@ -5,7 +5,7 @@
  *
  * @author Angelos
  */
-class platform {
+class Vio {
     
     public $db;
     public $beepdb;
@@ -20,7 +20,7 @@ class platform {
     public $lang;
     public $textRTL;
     
-    function platform(){
+    function Vio(){
         //Initiate configuration
         if(file_exists('config.php')){
             include_once('config.php');
@@ -106,7 +106,7 @@ class platform {
     function sendmail($from=NULL, $to, $subject, $body){
         require_once("Mail.php");
         if($from==NULL){
-            $from= "donotreply@DMaster";
+            $from= "donotreply@viralio";
         }
        $host = $this->config->smtphost;
        $username = $this->config->smtpusername;
@@ -125,7 +125,7 @@ class platform {
         require_once("Mail.php");
         require_once("Mail/mime.php");
         if($from==NULL){
-            $from= "donotreply@DMaster";
+            $from= "donotreply@viralio";
         }
        // $file="add_users_sphinx.php";
        $host = "localhost";

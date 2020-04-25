@@ -26,7 +26,7 @@ define('_SECURED', 1);
 
 //Prepare platform and db connection classes
 include('library/classes/platform.php');
-$platform = new platform;
+$platform = new Vio;
 
 /*
 if (!$platform->database_connected()) {

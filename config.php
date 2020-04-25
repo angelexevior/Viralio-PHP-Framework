@@ -4,7 +4,7 @@ class config{
     public $db_hostname = 'localhost';
     public $db_username = 'root';
     public $db_password = '';
-    public $db_database = 'dmaster';
+    public $db_database = 'viralio';
     
     //The time a session should be left alive (In seconds)
     //This is for security reasons. Users will be automatically logged out after the specified seconds of inactivity
