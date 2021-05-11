@@ -2,13 +2,22 @@
 This project is simply to layout the interfaces for the Vio PHP Framework development project
 
 ### Designer Templates
-Using Xenon html5 framework, DevExpress libraries, and base PHP Core framework with performance tests for development.
+Using template framework, and base PHP Core framework with performance tests for development.
+
+### Features
+- Database library
+- Session control
+- UAC (User Account Control)
+- Mobile_detect library
+- Multi-language support
+- MVC
+- Ajax library
 
 ### Convert HTML5 framework to PHP Templating
 Follow guidlines as outlined in comments within php files
 
 ### Authors and Contributors
-Guided by: Angelos Hadjiphilippou (@angelexevior) 
+Founded & Guided by: Angelos Hadjiphilippou (@angelexevior) 
 
 Original Team Members: 
 
@@ -19,3 +28,5 @@ Original Team Members:
 - Agathoklis Vakanas (@avakan01)
 - Christos Panagi (@cpanag12)
 - Andreas Kizis (@akyzis01)
+- Chrysostomos Pogiatzis (@ChrysostomosPogiatzis)
+- Nikolas Kyriakides (@TheRealGofre)
